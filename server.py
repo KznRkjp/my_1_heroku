@@ -12,7 +12,7 @@ def index():
   x = random()
 
   return {
-    "date": f"{now.year}-{now.month}-{now.day}",
+    "date": f"{now.year}-{now.month}-",
     "predictions": horoscope.generate_prophecies(5,3),
     "special_date": x > 0.5,
     "x": x,
